@@ -56,6 +56,11 @@ http://localhost/online%20pet%20shop/admin_area/index.php?view_payments
 * Better UI/UX
 * Security enhancements (SQL injection prevention)
 
+## Note
+
+This project was developed as an academic project. It uses sample data
+and is intended for local/educational use.
+
 ## 👤 Author
 
 Md Al Sayekh Dhusor,
