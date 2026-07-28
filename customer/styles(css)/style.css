@@ -1,0 +1,652 @@
+body{
+    font-family: "Roboto", Helvetica, Arial, sans-serif; /* Here we will use this 4 fonts in our full website*/
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #f0f0f0 ;
+
+}
+/*Top bar style start*/
+/* "#" must be use because we are targetting the Top so. */
+#top{ /* Here by using top we are indicating the top id */
+
+    background-color: #555555;
+    padding: 10px 0;    /* 10px: This represents the padding value for the top and bottom sides of the element. 0: This represents the padding value for the left and right sides of the element.Here there will be no padding on the left and right sides of the content. */
+
+}
+#top .offer{ /* aikhane first a top id er color niye kaj kora hoyeche then amra oitar first class niye kaj korbo. so class k call korbo (.class name) diye r aikhane class name holo 'offer' */
+	color: #fff;
+}
+#top .offer .btn{ /* first a jabe top a then jabe offer a then jabe button a*/
+    text-transform: uppercase;
+}
+@media(max-width: 991px){ /*@media: This is the at-rule used to apply CSS styles based on specific conditions, such as the size of the viewport or the device being used. viewpoint dekhte kmn hobe seta define kore dewa hoy aitar maddhome*/
+	#top .offer{ /* @media for top .offer */
+		margin-bottom: 12px;
+	}
+
+}
+@media(max-width: 991px){
+	#top{ /* @media for only top*/ 
+		font-size: 14px;
+		text-align: center;
+
+	}
+}
+#top a{
+	color: #fff;/* anker tag er upor tab korle oitar color change hobe ajonno ata dewa hoise*/
+}
+#top ul.menu{
+	padding-top: 5px;
+	margin: 0;
+	text-align: right;
+	font-size: 15px;
+	list-style: none;
+
+}
+@media(max-width: 991px){
+	#top ul.menu{ /* @media for top ul .menu */ 
+     text-align: center;
+	}
+}
+#top ul.menu{
+	text-align: center;
+}
+#top ul.menu > li{
+	display: inline-block;
+}
+#top ul.menu > li a{ /*at first top then ul.menu  then it will take us to the listed order and then edit 'anker'*/
+
+	color: #eeeeee;
+}
+#top ul.menu > li + li:before{ /* + li: This is the adjacent sibling combinator. It selects the list items (li) that are immediately preceded by another list item (li). In other words, it selects the second and subsequent list items but excludes the first one.*/
+	content: "|\00a0"; /*"|\00a0";: This property inserts content before each selected list item. In this case, it inserts a vertical bar (|) followed by a non-breaking space (\00a0). The \00a0 represents the non-breaking space character in Unicode.*/
+	padding: 0 5px; /* This property sets padding around the content inserted before each list item. It has no padding on the top and bottom (0) and 5px of padding on the left and right sides.*/
+	color: #f7f7f7;
+} 
+/*Top bar style End */
+
+
+
+/*Header style Start*/
+
+.navbar{ /* serialwise navbar theke akta kore jawa shuru korbe  */
+	background: white;
+}
+
+.navbar-collapse .right{
+	float: right;
+}
+
+.navbar-brand {
+	float:left ;
+	padding: 10px 15px;
+	font-size: 18px;
+	line-height: 20px;
+	height: 70px;
+
+}
+
+.navbar-brand:hover,/* that applies styles to an element when it is being hovered over by the mouse cursor.*/
+.navbar-brand:focus{
+	text-decoration: none;
+}
+
+.navbar ul.nav > li > a{ /* navbar er unordered list then nav er list then jei anker tag gulo thakbe segular jonno */
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+
+}
+
+.padding-nav{
+	padding-top: 10px;
+}
+
+.navbar ul.nav > li > a:hover{
+	background: #e7e7e7;
+}
+
+.btn-primary{
+	color: rgb(255, 255, 255);
+	background-color: rgb(79, 191, 168);
+	border-color: rgb(65, 179, 156);
+}
+
+
+
+
+/*header style end */
+
+
+
+/*Search bar style start*/
+
+
+#search .navbar-form{ /* # er por amra jeta likhi seta hoy id or we can say we are targetting the search id */
+     float: right;
+
+}
+#search{
+	clear: both;/*This would clear any floated elements that appear above the "search" element, ensuring that it appears below them.jokhon search box a press kore felbo then upore search icon j hovar hoye chilo seta r thakbe nhh*/
+	border-top: solid 1px #9adacd;
+	text-align: right;
+}
+
+#search .navbar-form .iput-group{
+	display: table;
+
+}
+
+#search .navbar-form .iput-group .form-control{
+	width: 100%;
+}
+
+/*Search bar style End*/
+
+
+/*Slide style start*/
+
+
+#slider{
+	margin-bottom: 40px;
+}
+
+/*Slide style end */
+
+
+
+/*Advantage style start*/
+
+
+.box{
+	background: #fff;
+	margin: 0 0 30px;
+	border: solid 1px #e6e6e6;
+	padding: 20px;
+	box-shadow: 0 px 5px rgba(0, 0, 0, 0.1);
+}
+
+#advantage{
+	text-align: center;
+}
+
+
+#advantage .box .icon{
+	position: absolute;
+	font-size: 120px;
+	width: 100%;
+	text-align: center;
+	top: -20px;
+	left: 0;
+	height: 100%;
+	float: Left;
+	color: #eeeeee;
+	transition: all 0.2s ease-out;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+
+
+#advantage .box h3{
+	position: relative;
+	margin: 0 0 20px;
+	font-weight: 300;
+	text-transform: uppercase;
+	z-index: 2;
+
+}
+
+
+#advantage .box h3 a:hover{
+	text-decoration: none;
+
+}
+
+
+#advantage .box p{
+	position: relative;
+	color: #555555;
+	z-index: 2;
+}
+
+
+
+
+/*Advantage style end*/
+
+
+
+/* Hot styling start*/ 
+
+#hot h2{
+	text-transform: uppercase;
+	font-size: 36px;
+	color: #50394c;
+	font-weight: 100;
+	text-align: center;
+}
+
+
+
+/* Hot styling end*/ 
+
+
+
+
+
+
+
+/* Product styling start*/ 
+
+#content{/* here we are targetting content so we have to use # */ 
+     
+     padding-left: 25px;
+
+}
+
+
+
+.single{
+	width: 290px;
+
+}
+
+
+@media(max-width: 768px){
+	.single{
+		width: 60%;
+		margin: 0 auto;
+	}
+
+}
+
+
+
+
+#content .product{
+
+	background: #fff;
+	border: solid 1px #e6e6e6;
+	box-sizing: border-box;
+	margin-bottom: 30px;
+
+}
+
+
+
+#content .product .text p.price{
+    
+    font-size: 16px;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+
+
+#content .product .text .buttons{
+
+	clear: both;
+	text-align: center;
+
+}
+
+
+
+
+#content .product .text h3{
+
+	text-align: center;
+	font-size: 20px;
+}
+
+
+#content .product .text h3 a{
+
+	color: rgb(85, 85, 85);
+
+}
+
+
+
+#content .product .text{
+
+	padding: 10px 10px 10px;
+
+}
+
+
+
+
+#content .product .text .buttons .btn{
+
+	margin-bottom: 10px;
+}
+
+
+
+
+
+/* Product styling end*/ 
+
+
+
+
+
+
+/* Product category start */
+
+
+#content .panel.sidebar-menu{
+
+	box-sizing: border-box;
+	box-shadow: 0 1px 5pxn rgba(0, 0, 0, 0.1);
+
+
+}
+
+
+#content .panel.sidebar-menu ul.nav.category-menu{
+
+	margin-bottom: 20px;
+}
+
+
+#content .panel.sidebar-menu ul.nav.category-menu li a{
+
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+#content .panel.sidebar-menu h3{
+
+	padding: 5px 0;
+	margin: 0;
+}
+/* Product category end */
+
+
+
+
+
+
+/* Breadcrumb section start */
+
+
+.breadcrumb{
+
+	padding: 8px 15px;
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	border-radius: 0;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.breadcrumb >li + li:before{
+
+	content: ">\00a0";
+	color: #cccccc;
+}
+
+
+@media (max-width: 991px){
+	.breadcrumb{
+		padding: 8px 0;
+		text-align: center;
+	}
+}
+
+
+/* Breadcrumb section end */
+
+
+
+
+
+
+/* shop product styling start */
+
+@media (max-width: 768px){
+
+	.center-respopnsive{
+
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+
+@media (max-width: 550px){
+
+	.center-respopnsive{
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+/* shop product styling end */
+
+
+
+
+/* Details page styling start */
+
+
+
+#content #productmain{
+
+	margin-bottom: 30px;
+}
+
+#content #productmain .price{
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 40px;
+
+}
+
+
+#content #mainimage{
+
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+#content .thumb a{
+
+	display: block;
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+	border: solid 2px transparent;
+
+}
+
+
+#content .headline{
+	height: 350px;
+}
+
+/* Details page styling end */
+
+
+
+
+
+/*Cart style start*/
+
+
+#content #cart .table tbody tr td img{
+
+	width: 50px;
+
+}
+
+#content #cart .table tbody tr td input{
+
+	width: 40px;
+	text-align: right;
+}
+
+
+#content #cart .table tbody tr td{
+
+	vertical-align: middle;
+}
+
+#content #cart .table tfoot{
+
+	font-size: 18px;
+}
+
+
+.box .box-footer{
+	background: #f7f7f7;
+	margin: 30px -20px -20px;
+	padding: 20px;
+	border-top: solid 1px #eeeeee;
+
+}
+
+
+
+
+.box .box-footer:before,
+.box .box-footer:aafter{
+	content: " ";
+	display: table;
+}
+
+.box .box-footer:aafter{
+
+	clear: both;
+}
+
+
+
+
+.box .box-header{
+	background: #f7f7f7;
+	margin: -20px -20px 20px;
+	padding: 20px;
+	border-bottom: solid 1px #eeeeee;
+}
+
+
+
+#content #order-summary table{
+	margin-top: 20px;
+}
+
+
+#content #order-summary table td{
+
+	color: #999999;
+
+}
+
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th{
+
+	font-size: 18px;
+	color: #555555;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+/*Cart style end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer style start*/
+
+
+
+
+#footer{
+	background: #e0e0e0;
+	padding: 20px 0;
+}
+
+
+#footer ul{
+	padding-left: 0;
+	list-style: none;
+}
+
+
+#footer ul a{
+	color: 999999;
+	padding: 20px 0;
+}
+
+
+
+#footer .social{
+	text-align: left;
+
+}
+
+
+#footer .social a{
+	margin: 0 10px 0 0;
+	color: #fff;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+	transform: all 0.2s ease-out;
+	vertical-align: bottom;
+	background-color: #555555;
+	z-index: 1;
+
+
+}
+
+
+
+/*Footer style end*/
+
+
+
+
+
+/*copyright style start*/
+
+
+
+#copyright{
+
+	background: #333;
+	color: #ccc;
+	padding: 20PX;
+	font-size: 12PX;
+
+}
+
+#copyright P{
+	margin: 0;
+}
+
+/*copyright style end*/
